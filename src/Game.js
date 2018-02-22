@@ -1,7 +1,9 @@
-// import React, { Component } from 'react';
+import React, { Component } from 'react';
+import Board from './Board.js'
 
 
-class Game extends React.Component {
+
+export default class extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,7 +23,7 @@ class Game extends React.Component {
     const squares = current.squares.slice();
     if (calculateWinner(squares) || squares[i]) {
       return;
-    }npm
+    }
     squares[i] = this.state.xIsNext ? "X" : "O";
     this.setState({
       history: history.concat([
@@ -81,10 +83,6 @@ class Game extends React.Component {
   }
 }
 
-// ========================================
-
-ReactDOM.render(<Game />, document.getElementById("root"));
-
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
@@ -104,3 +102,4 @@ function calculateWinner(squares) {
   }
   return null;
 }
+
