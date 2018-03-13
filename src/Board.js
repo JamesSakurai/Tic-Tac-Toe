@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Square from './Square.js';
 
 export default class extends React.Component {

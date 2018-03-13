@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import Square from './Square.js';
 import './index.css';
-import Board from './Board.js'
 import Game from './Game.js'
 
 // function Square(props) {
